@@ -2,3 +2,64 @@
     margin: 0;
     padding: 0;
 }
+
+#banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.2),#250029),url(Photo/banner2.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+}
+.banner{
+    width: 140px;
+    position: relative;
+    left: 3%;
+    top: 5%;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-btn{
+    margin: 70px auto 0;
+
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1 ;
+    transition: .5s;
+}
+/*.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: .5s;
+}*/
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color: black;
+}
