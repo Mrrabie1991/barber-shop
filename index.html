@@ -20,7 +20,7 @@
         alt="Model-Hair-Salon-Logo"
       />
       <div class="banner-text">
-        <h1>Hair Studio</h1>
+        <h1>Hair Salon</h1>
         <p>Style Your Hair Is Style Your Life</p>
         <div class="banner-btn">
           <a href="#"><span></span> Find Out</a>
@@ -28,5 +28,34 @@
         </div>
       </div>
     </section>
+    <div id="SideNav">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+          <li><a href="#">MEET US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="Photo/navicon.png" id="menu" alt="icon-menu" />
+    </div>
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var SideNav = document.getElementById("SideNav");
+      var menu = document.getElementById("menu");
+      SideNav.style.right = "-200px";
+      menuBtn.onclick = function () {
+        if (SideNav.style.right == "-200px") {
+          SideNav.style.right = "0px";
+          menu.src = "Photo/close.png";
+        } else {
+          SideNav.style.right = "-200px";
+          menu.src = "Photo/navicon.png";
+        }
+      };
+    </script>
   </body>
 </html>
