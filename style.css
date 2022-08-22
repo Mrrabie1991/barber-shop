@@ -57,6 +57,7 @@
     background-color: white;
     z-index: -1;
     transition: .5s;
+    border-radius: 5px;
 }
 .banner-btn a:hover span{
     width: 100%;
@@ -106,10 +107,12 @@ nav ul li a{
 #feature{
     width: 100%;
     padding: 70px 0;
+    
 }
 .title-text{
     text-align: center;
     padding-bottom: 70px;
+    
 }
 .title-text p{
     margin: auto;
@@ -241,4 +244,73 @@ hr{
 }
 .single-service p{
     font-size: 14px;
+}
+/*--testimonial--*/
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+
+/*--footer--*/
+
+#footer{
+    padding: 100px 20px 0;
+    background: #efefef;
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-right h1{
+    margin: 10px 0;
+}
+.footer-right p{
+    line-height: 35px;
 }

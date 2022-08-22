@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
     <title>Barber Shop</title>
   </head>
@@ -31,11 +32,11 @@
     <div id="SideNav">
       <nav>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">FEATURES</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">TESTIMONIALS</a></li>
-          <li><a href="#">MEET US</a></li>
+          <li><a href="#banner">HOME</a></li>
+          <li><a href="#feature">FEATURES</a></li>
+          <li><a href="#service">SERVICES</a></li>
+          <li><a href="#testimonial">TESTIMONIALS</a></li>
+          <li><a href="#footer">MEET US</a></li>
         </ul>
       </nav>
     </div>
@@ -137,6 +138,80 @@
       </div>
     </section>
     <!--TESTIMONIALS-->
+    <section id="testimonial">
+      <div class="title-text">
+        <p>TESTIMONIALS</p>
+        <h1>Our Clients Say</h1>
+      </div>
+      <div class="testimonial-row">
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="Photo/user-1.jpg" alt="" />
+            <div class="user-info">
+              <h4>joo</h4>
+            </div>
+          </div>
+          <p>
+            The barber's responsibilities include cutting, trimming, styling,
+            and coloring client's hair according to their instructions, fitting
+            and grooming hairpieces, and billing clients. You should also be
+            able to provide hairstyle suggestions and haircare advice to
+            clients.
+          </p>
+        </div>
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="Photo/user-2.jpg" alt="" />
+            <div class="user-info">
+              <h4>joo</h4>
+            </div>
+          </div>
+          <p>
+            The barber's responsibilities include cutting, trimming, styling,
+            and coloring client's hair according to their instructions, fitting
+            and grooming hairpieces, and billing clients. You should also be
+            able to provide hairstyle suggestions and haircare advice to
+            clients.
+          </p>
+        </div>
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="Photo/user-3.jpg" alt="" />
+            <div class="user-info">
+              <h4>joo</h4>
+            </div>
+          </div>
+          <p>
+            The barber's responsibilities include cutting, trimming, styling,
+            and coloring client's hair according to their instructions, fitting
+            and grooming hairpieces, and billing clients. You should also be
+            able to provide hairstyle suggestions and haircare advice to
+            clients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section id="footer">
+      <div class="title-text">
+        <p>CONTACT US</p>
+        <h1>Visit Shop Today</h1>
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <h1>Opening Hours</h1>
+          <p>Monday To Friday - 9am To 6pm</p>
+          <p>Saturday - 9am To 11pm</p>
+        </div>
+        <div class="footer-right">
+          <h1>Get in Touch</h1>
+          <p>#45, via Roma, milan</p>
+          <p>test@gmail.com</p>
+          <p>+1-888-52-35</p>
+        </div>
+      </div>
+    </section>
 
     <script>
       var menuBtn = document.getElementById("menuBtn");
@@ -152,6 +227,10 @@
           menu.src = "Photo/navicon.png";
         }
       };
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
     </script>
   </body>
 </html>
